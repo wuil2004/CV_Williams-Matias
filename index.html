@@ -67,7 +67,7 @@
     <nav class="fixed top-0 left-0 w-full glass-nav z-[100] transition-all duration-300">
         <div class="max-w-5xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center relative">
             
-            <a href="#" class="text-xl font-black text-slate-900 tracking-tighter hover:text-indigo-600 transition-colors">
+            <a href="index.html" class="text-xl font-black text-slate-900 tracking-tighter hover:text-indigo-600 transition-colors">
                 WM<span class="text-indigo-600">.</span>
             </a>
             
@@ -75,6 +75,7 @@
                 <a href="#perfil" class="hover:text-indigo-600 transition-colors">Perfil</a>
                 <a href="#experiencia" class="hover:text-indigo-600 transition-colors">Educación</a>
                 <a href="#proyectos" class="hover:text-indigo-600 transition-colors">Proyectos</a>
+                <a href="portafolio.html" class="text-indigo-600 hover:text-indigo-800 transition-colors">Ver Portafolio</a>
                 <a href="CV.pdf" download="CV_Williams_Matias.pdf" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors shadow-md shadow-indigo-200">
                     Descargar CV
                 </a>
@@ -93,8 +94,8 @@
                 <a href="#perfil" onclick="toggleMobileMenu()" class="hover:text-indigo-600 transition-colors">Perfil</a>
                 <a href="#experiencia" onclick="toggleMobileMenu()" class="hover:text-indigo-600 transition-colors">Educación</a>
                 <a href="#proyectos" onclick="toggleMobileMenu()" class="hover:text-indigo-600 transition-colors">Proyectos</a>
+                <a href="portafolio.html" class="text-indigo-600 hover:text-indigo-800 transition-colors">Portafolio Completo</a>
             </div>
-
         </div>
     </nav>
 
@@ -171,10 +172,10 @@
                     <div id="tab-resumen" class="tab-content block">
                         <p class="text-indigo-400 mb-3">$ cat resumen.txt</p>
                         <p class="mb-2 text-justify">
-                            Estudiante de Ingeniería en Sistemas Computacionales (8º Semestre - TESJI). Con sólido interés en la automatización, aseguramiento de calidad (QA) y administración de infraestructura.
+                            Estudiante de Ingeniería en Sistemas Computacionales (8º Semestre - TESJI). Con sólido interés en la automatización, contenedores y administración de infraestructura Backend.
                         </p>
                         <p class="text-justify">
-                            Cuento con experiencia práctica desarrollando arquitecturas escalables, integración de APIs y proyectos IoT. Buscando un entorno donde pueda hackear soluciones, optimizar sistemas y seguir creciendo profesionalmente.
+                            Cuento con experiencia práctica desarrollando arquitecturas de microservicios escalables e integración de proyectos IoT. Buscando un entorno donde pueda aplicar mis conocimientos en bases de datos y orquestación para seguir creciendo profesionalmente.
                         </p>
                     </div>
 
@@ -182,13 +183,13 @@
                         <p class="text-indigo-400 mb-3">$ nano infraestructura.json</p>
                         <pre class="text-teal-300 text-xs md:text-sm overflow-x-auto">
 {
-  "servidores": "Experiencia montando Home Servers",
-  "contenedores": "Uso de Docker Compose para microservicios",
+  "servidores": "Experiencia montando Home Servers en Linux",
+  "contenedores": "Uso intensivo de Docker y Docker Compose",
   "bases_de_datos": [
     "MySQL (Relacional)",
-    "MongoDB (Configuración de Replica Sets)"
+    "MongoDB (NoSQL)"
   ],
-  "seguridad": "Prevención de Inyección SQL y Auditoría"
+  "arquitectura": "Microservicios, Nginx, Colas de Mensajes (RabbitMQ)"
 }</pre>
                     </div>
 
@@ -196,10 +197,10 @@
                         <p class="text-indigo-400 mb-3">$ ./listar_habilidades.sh</p>
                         <p class="text-emerald-400">> Cargando módulos...</p>
                         <ul class="mt-2 text-slate-300 space-y-1">
-                            <li><span class="text-yellow-300">[OK]</span> Frontend (React, JS, HTML/CSS)</li>
-                            <li><span class="text-yellow-300">[OK]</span> Backend (Python, Node.js, C)</li>
-                            <li><span class="text-yellow-300">[OK]</span> Redes (Sockets TCP/IP, Linux)</li>
-                            <li><span class="text-yellow-300">[OK]</span> Hardware (ESP32, Protocolo I2C)</li>
+                            <li><span class="text-yellow-300">[OK]</span> Backend (Node.js, JS, C++)</li>
+                            <li><span class="text-yellow-300">[OK]</span> Arquitectura (Microservicios, RabbitMQ)</li>
+                            <li><span class="text-yellow-300">[OK]</span> Infraestructura (Docker, Nginx, Linux)</li>
+                            <li><span class="text-yellow-300">[OK]</span> Hardware/IoT (ESP32, Protocolo I2C)</li>
                         </ul>
                     </div>
 
@@ -219,7 +220,7 @@
                     <h3 class="text-xl font-bold text-slate-900">Tecnológico de Estudios Superiores de Jilotepec (TESJI)</h3>
                     <p class="text-slate-500 mt-1">Ingeniería en Sistemas Computacionales • 8º Semestre</p>
                     <p class="text-slate-400 text-sm mt-2 flex items-center gap-2">
-                        <span class="text-teal-500">🏆</span> Promedio sobresaliente en proyectos de IoT y Full-stack (90-100).
+                        <span class="text-teal-500">🏆</span> Promedio sobresaliente (90-100).
                     </p>
                 </div>
                 <div class="text-right w-full md:w-auto">
@@ -234,15 +235,14 @@
                 <span class="w-8 h-1 bg-indigo-500 rounded-full"></span> Mis Herramientas
             </h2>
             <div class="flex flex-wrap gap-3">
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 cursor-default">React</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Node.js</span>
                 <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 cursor-default">JavaScript</span>
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-blue-400 hover:text-blue-600 hover:-translate-y-1 transition-all duration-300 cursor-default">HTML/CSS</span>
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Python</span>
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Node.js</span>
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">MySQL</span>
                 <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Docker</span>
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Linux</span>
-                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Redes / Sockets</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Microservicios</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">RabbitMQ</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Nginx</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">MySQL / MongoDB</span>
+                <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-indigo-400 hover:text-indigo-600 hover:-translate-y-1 transition-all duration-300 cursor-default">Linux (Ubuntu)</span>
                 <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-teal-400 hover:text-teal-600 hover:-translate-y-1 transition-all duration-300 cursor-default">ESP32</span>
                 <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-teal-400 hover:text-teal-600 hover:-translate-y-1 transition-all duration-300 cursor-default">IoT</span>
                 <span class="px-4 py-2 bg-white border border-slate-200 rounded-xl shadow-sm text-slate-700 font-medium hover:border-teal-400 hover:text-teal-600 hover:-translate-y-1 transition-all duration-300 cursor-default">C / C++</span>
@@ -254,58 +254,47 @@
                 <span class="w-8 h-1 bg-blue-500 rounded-full"></span> Proyectos Destacados
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🌐</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Sistema de Gestión Remoto</h3>
-                    <p class="text-slate-500 text-sm mb-6 line-clamp-3">Aplicación en Python utilizando Sockets para administración de equipos concurrentes en tiempo real. Incluye screen sharing y control DNS/Firewall.</p>
-                    <div class="flex gap-2 text-xs font-semibold text-indigo-600 mb-4">
-                        <span class="bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-lg">Python</span>
-                        <span class="bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-lg">Sockets</span>
-                    </div>
-                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4 border-t border-slate-100 pt-4">
-                        <a href="https://github.com/wuil2004" target="_blank" class="text-sm font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-2">Ver en GitHub &rarr;</a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Tarjeta 1: Microservicios -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden flex flex-col h-full">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🔗</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Clon Twitter: Microservicios</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">Arquitectura distribuida con balanceo de carga mediante Nginx y comunicación asíncrona usando RabbitMQ para procesamiento en cola.</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold text-indigo-600 mt-auto">
+                        <span class="bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-lg">Docker</span>
+                        <span class="bg-indigo-50 border border-indigo-100 px-3 py-1 rounded-lg">RabbitMQ</span>
                     </div>
                 </div>
 
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+                <!-- Tarjeta 2: Cortina de Agua -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-teal-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden flex flex-col h-full">
                     <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">💧</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Cortina de Agua Automatizada</h3>
-                    <p class="text-slate-500 text-sm mb-6 line-clamp-3">Sistema IoT maestro-esclavo con ESP32 e I2C. Interfaz web para control de 11 electroválvulas y visualización rítmica sincronizada.</p>
-                    <div class="flex gap-2 text-xs font-semibold text-teal-600 mb-4">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Cortina de Agua IoT</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">Sistema IoT maestro-esclavo con ESP32 e I2C. Interfaz web para control de electroválvulas y visualización rítmica sincronizada.</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold text-teal-600 mt-auto">
                         <span class="bg-teal-50 border border-teal-100 px-3 py-1 rounded-lg">ESP32</span>
                         <span class="bg-teal-50 border border-teal-100 px-3 py-1 rounded-lg">Hardware</span>
                     </div>
-                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4 border-t border-slate-100 pt-4">
-                        <a href="https://github.com/wuil2004" target="_blank" class="text-sm font-bold text-teal-600 hover:text-teal-800 flex items-center gap-2">Ver detalles &rarr;</a>
-                    </div>
                 </div>
 
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
-                    <div class="w-12 h-12 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🛡️</div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Auditoría y Monitoreo</h3>
-                    <p class="text-slate-500 text-sm mb-6 line-clamp-3">Herramienta de ciberseguridad para captura de eventos (teclado, pantalla) y recolección de info de red. Empaquetado en .exe con reportes automáticos.</p>
-                    <div class="flex gap-2 text-xs font-semibold text-red-600 mb-4">
-                        <span class="bg-red-50 border border-red-100 px-3 py-1 rounded-lg">Python</span>
-                        <span class="bg-red-50 border border-red-100 px-3 py-1 rounded-lg">Ciberseguridad</span>
-                    </div>
-                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4 border-t border-slate-100 pt-4">
-                        <a href="https://github.com/wuil2004" target="_blank" class="text-sm font-bold text-red-600 hover:text-red-800 flex items-center gap-2">Ver en GitHub &rarr;</a>
-                    </div>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+                <!-- Tarjeta 3: Catálogo Tesis -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden flex flex-col h-full">
                     <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">📚</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-2">Catálogo Digital de Tesis</h3>
-                    <p class="text-slate-500 text-sm mb-6 line-clamp-3">Desarrollo de operaciones CRUD para gestión y almacenamiento de documentos académicos, optimizando la búsqueda y filtrado de datos.</p>
-                    <div class="flex gap-2 text-xs font-semibold text-purple-600 mb-4">
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">Desarrollo backend y base de datos contenerizada para gestión y almacenamiento de documentos académicos optimizando la búsqueda.</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold text-purple-600 mt-auto">
                         <span class="bg-purple-50 border border-purple-100 px-3 py-1 rounded-lg">Node.js</span>
                         <span class="bg-purple-50 border border-purple-100 px-3 py-1 rounded-lg">MySQL</span>
                     </div>
-                    <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 mt-4 border-t border-slate-100 pt-4">
-                        <a href="https://github.com/wuil2004" target="_blank" class="text-sm font-bold text-purple-600 hover:text-purple-800 flex items-center gap-2">Ver repositorio &rarr;</a>
-                    </div>
                 </div>
+            </div>
+
+            <!-- Botón hacia el portafolio -->
+            <div class="mt-12 text-center">
+                <a href="portafolio.html" class="inline-flex items-center gap-2 px-8 py-4 bg-slate-900 text-white font-bold rounded-xl hover:bg-indigo-600 transition-colors shadow-lg hover:-translate-y-1 relative z-10">
+                    Ver todos los proyectos a detalle
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
             </div>
         </div>
 
@@ -332,8 +321,8 @@
     </div>
 
     <script>
-        // 1. Efecto de Máquina de Escribir
-        const texts = ["Ingeniero en Sistemas", "Desarrollador Backend", "Entusiasta de IoT & Redes", "Estudiante en TESJI"];
+        // Lógica de Máquina de Escribir
+        const texts = ["Ingeniero en Sistemas", "Desarrollador Backend", "Entusiasta de IoT & Hardware", "Estudiante en TESJI"];
         let count = 0; let index = 0; let currentText = ""; let letter = "";
 
         (function type() {
@@ -350,19 +339,18 @@
             }
         }());
 
-        // 2. Control de Pestañas de la Terminal
+        // Lógica de Pestañas
         function changeTab(tabId) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
             document.querySelectorAll('.terminal-tab').forEach(btn => {
                 btn.className = 'terminal-tab px-4 py-2 text-xs font-mono rounded-t-lg text-slate-400 hover:bg-slate-800 transition-colors';
             });
-
             document.getElementById(tabId).classList.remove('hidden');
             const activeBtn = document.getElementById('btn-' + tabId.replace('tab-', ''));
             activeBtn.className = 'terminal-tab px-4 py-2 text-xs font-mono rounded-t-lg bg-slate-900 text-indigo-400 border-t border-x border-slate-700';
         }
 
-        // 3. Animaciones al hacer Scroll (Reveal)
+        // Animación Scroll Reveal
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
@@ -377,11 +365,10 @@
         window.addEventListener("scroll", reveal);
         reveal();
 
-        // 4. Lógica para el Menú Desplegable de Contacto
+        // Dropdown Contacto
         function toggleContactMenu() {
             const menu = document.getElementById('contact-menu');
             const arrow = document.getElementById('contact-arrow');
-            
             if (menu.classList.contains('hidden')) {
                 menu.classList.remove('hidden');
                 arrow.classList.add('rotate-180');
@@ -399,18 +386,15 @@
             }
         }
 
-        // Cierra el dropdown si el usuario hace clic fuera de él
         document.addEventListener('click', function(event) {
             const menu = document.getElementById('contact-menu');
             const button = menu.previousElementSibling;
             if (!button.contains(event.target) && !menu.contains(event.target)) {
-                if (!menu.classList.contains('hidden')) {
-                    toggleContactMenu();
-                }
+                if (!menu.classList.contains('hidden')) { toggleContactMenu(); }
             }
         });
 
-        // 5. Lógica para el Menú de Hamburguesa (Celulares)
+        // Menú Móvil
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobile-menu');
             if (mobileMenu.classList.contains('hidden')) {
@@ -423,5 +407,4 @@
         }
     </script>
 </body>
-
 </html>
